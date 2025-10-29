@@ -12,3 +12,8 @@ Create an asynchronous function that fetches data from API at https://jsonplaceh
 3. Firstly I used `fetch()` to get all posts from the API. Then I have used `slice(0, 5)` to extract first five posts. Afterwards, I used `map()` to transform posts array into titles array
 4. To "log the titles", I outputted directly within the function rather than returning data
 
+## How to Run
+1. Navigate to the Task1 directory
+2. Run the script with Node.js: `node Task1.js`
+3. Make sure you have an active internet connection for the API call
+

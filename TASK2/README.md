@@ -14,3 +14,16 @@ Build a React component that fetches a list of users from https://jsonplaceholde
 5. I used `fetch()` to get all posts from the API. Afterwards, I used `map()` to output each user's email and name referring to their id, using `key={user_id}` 
 6. I used `<ul>` and `<li>` tags for list rendering
 7. CSS was used only for text alignment 
+
+## How to Run
+1. Navigate to the Task2 directory
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open your browser to the local URL shown in the terminal (usually `http://localhost:5173`)
+
+## Project Structure
+- `App.jsx` - Main React component with user fetching logic
+- `App.css` - Styling for the user list
+- `main.jsx` - React application entry point
+- Uses Vite as the build tool
+

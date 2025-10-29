@@ -15,3 +15,9 @@ Create a responsive navigation bar using only HTML and CSS. The navbar should:
 5. I used Flexbox for horizontal layout and fixed positioning for mobile sidebar design
 6. I used HTML with `<nav>` and `<a>` tags for structurizing
 7. CSS was used for responsive behavior, hover effects, and visual styling. Small detail that I payed attention to, includes using Kin Technology's brand colors
+
+## How to Run
+1. Open `responsive_nav.html` directly in your web browser
+2. Test responsiveness by resizing your browser window below 768px width
+3. Click the open-sidebar button menu (☰) to open mobile navigation
+
