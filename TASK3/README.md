@@ -7,7 +7,7 @@ Create a responsive navigation bar using only HTML and CSS. The navbar should:
 - Include links for “Home,” “About,” and “Contact.”
 - Collapse into a dropdown menu on screens smaller than 768px. 
 
-### Implementation Strategy
+### My Solution Strategy
 1. I implemented a `#sidebar-active` checkbox to toggle mobile menu
 2. I used media query with `@media (max-width: 768px)` to detect mobile screens and make the navigation bar responsive
 3. I added buttons - open sidebar (☰) for opening and close-sidebar (✘) for closing the mobile menu

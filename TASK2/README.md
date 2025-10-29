@@ -21,9 +21,4 @@ Build a React component that fetches a list of users from https://jsonplaceholde
 3. Start the development server: `npm run dev`
 4. Open your browser to the local URL shown in the terminal (usually `http://localhost:5173`)
 
-## Project Structure
-- `App.jsx` - Main React component with user fetching logic
-- `App.css` - Styling for the user list
-- `main.jsx` - React application entry point
-- Uses Vite as the build tool
 
