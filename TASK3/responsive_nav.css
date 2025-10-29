@@ -1,0 +1,117 @@
+:root {
+    --color-1: black;
+    --text-color: white;
+    /* I used Kin Technology logo's color */
+    --accent-color: #246f53;
+}
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    height: 60px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* to fill entire navbar */
+.links-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+nav a:hover{
+    background-color: var(--accent-color);
+}
+nav .home-link{
+    margin-right: auto;
+}
+/* by default there is no sidebar checkbox and labels related to the checkbox, such as close button or open button*/
+#sidebar-active{
+    display:none;
+}
+.open-sidebar-button, .close-sidebar-button{
+    color: var(--text-color);
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* we show menu when screen size is less than or equal to 768px*/
+@media (max-width: 768px) {
+    .open-sidebar-button {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 11;
+    }
+/* for data to be shown vertically after pressing nav button */
+    .links-container {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 300px;
+        height: 100vh;
+        background-color: var(--color-1);
+        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
+        padding-top: 60px;
+    }
+/* close button is not displayed unless open button was pressed */
+    .close-sidebar-button {
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+        color: var(--text-color);
+        cursor: pointer;
+        padding: 10px;
+    }
+/* design of "home", "about" and "contact" elements */
+    nav a{
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+/* "home", "about" and "contact" elements are displayed only when open sidebar button is pressed since it makes sidebar-active to turn into true state */
+    #sidebar-active:checked ~ .links-container {
+        display: flex;
+    }
+/* once open-sidebar button is pressed it is not displayed anymore */
+    #sidebar-active:checked ~ .open-sidebar-button {
+        display: none;
+    }
+/* once open-sidebar button is pressed close sidebar button appears */
+    #sidebar-active:checked ~ .links-container .close-sidebar-button {
+        display: block;
+    }
+
+
+}
